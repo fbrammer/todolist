@@ -797,11 +797,11 @@
                                         </tableView>
                                     </subviews>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.59999999999999998" horizontal="YES" id="5h6-hS-rh2">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="5h6-hS-rh2">
                                     <rect key="frame" x="1" y="216" width="238" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="UZ3-AG-SF4">
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="UZ3-AG-SF4">
                                     <rect key="frame" x="224" y="17" width="15" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -847,9 +847,21 @@
                                     <action selector="addButton:" target="XfG-lQ-9wD" id="lOm-SO-4EB"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iZ0-uh-Kyf">
+                                <rect key="frame" x="277" y="13" width="189" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Delete" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xTv-3M-iwf">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="deleteClicked:" target="XfG-lQ-9wD" id="ght-bn-Lqj"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="deleteButton" destination="iZ0-uh-Kyf" id="4dx-96-tha"/>
                         <outlet property="importantCheckbox" destination="Tb4-1d-exC" id="2JJ-ax-wvt"/>
                         <outlet property="tableView" destination="b7L-SL-ndX" id="1iy-0w-cmr"/>
                         <outlet property="textField" destination="71G-Zf-nGf" id="3Gb-qg-u67"/>
